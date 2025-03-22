@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.container {
+    max-width: 75%;
+    margin: 0 auto;
+}
+@media (max-width: 976px) {
+    .container {
+        max-width: 90%;
+    }
+}
+
+.link{
+    text-decoration: none;
+    &:hover{
+        color: #ff0000
+    }
+}
