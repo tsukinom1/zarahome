@@ -5,7 +5,7 @@ import Link from "next/link";
 import BlackButton from "@/components/ui/BlackButton";
 import {validateLogin} from "@/utils/validateLogin";
 import MyInput from "@/components/ui/MyInput";
-import LoginContext from "@/utils/contexts/LoginContext";
+import {LoginContext} from "@/utils/contexts/LoginContext";
 import {loginStorage} from "@/utils/storages/LoginStorage";
 
 const LoginPage = () => {

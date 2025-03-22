@@ -2,7 +2,7 @@
 import React, {useState, useRef, useContext, useEffect} from 'react';
 import {useRouter} from "next/navigation";
 import Link from "next/link";
-import LoginContext from "@/utils/contexts/LoginContext";
+import {LoginContext} from "@/utils/contexts/LoginContext";
 import BlackButton from "@/components/ui/BlackButton"
 import MyInput from "@/components/ui/MyInput";
 import {validateRegister} from "@/utils/validateRegister";

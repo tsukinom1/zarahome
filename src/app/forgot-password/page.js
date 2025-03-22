@@ -3,7 +3,7 @@ import React, {useContext, useState} from 'react';
 import Link from "next/link";
 import BlackButton from "@/components/ui/BlackButton";
 import {useRouter} from "next/navigation";
-import LoginContext from "@/utils/contexts/LoginContext";
+import {LoginContext} from "@/utils/contexts/LoginContext";
 import MyInput from "@/components/ui/MyInput";
 import {validateRegister} from "@/utils/validateRegister";
 
