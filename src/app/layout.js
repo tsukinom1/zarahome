@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
             <title>ZaraHome</title>
         </Head>
         <body className="flex flex-col justify-between min-h-screen">
-        <LoginContextProvider>
+        <LoginContextProvider value={{ user: null }}>
             <CartContextProvider>
                 <Header />
                 <main className="flex-1">{children}</main>

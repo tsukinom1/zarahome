@@ -1,7 +1,6 @@
 "use client"
 import { createContext, useState, useMemo } from "react";
-
-export const LoginContext = createContext(null);
+const LoginContext = createContext(null);
 
 export function LoginContextProvider({ children }) {
     const [user, setUser] = useState({ email: "", password: "" });
@@ -11,10 +10,12 @@ export function LoginContextProvider({ children }) {
         setUser,
         isAuth: !!user.email,
     }), [user]);
-
+    
     return (
         <LoginContext.Provider value={contextValue}>
             {children}
         </LoginContext.Provider>
     );
 }
+
+export default LoginContext;
